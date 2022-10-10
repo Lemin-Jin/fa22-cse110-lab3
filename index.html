@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            CSE110 Lab2 html page
+        </title>
+        <link rel="icon" type="image/png" href="icons8-internet-16.png">
+    </head>
+    <body>
+        <header>
+        <h1> 
+            Pomordoro Timer First Brainstorm
+        </h1>
+        <h3>
+            <time datetime="2022-10-09">October 9, 2022</time>
+        </h3>
+        </header>
+        <hr>
+        <nav>
+            <a href="#Agenda"> Agenda</a> |
+            <a href="#Diagrams"> Diagrams</a> |
+            <a href="#Videos"> Videos</a> |
+        </nav>
+        <hr>
+        <form >
+        <fieldset>
+            First name: <input type = "text" name = "first_name" />
+            <br>
+            Last name: <input type = "text" name = "last_name" />
+            <br>
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <br>
+            <label for="Browsers">Choose a Browser:</label>
+
+            <select name="browsers" id="browsers">
+                    <option value="Edge"> Edge</option>
+                    <option value="Firefox"> Firefox</option>
+                    <option value="Chrome">Chrome</option>
+                    <option value="Opera">Opera</option>
+                    <option value="Safari">Safari</option>
+            </select>
+            <button type="submit"> submit</button>
+        </fieldset>
+        </form>
+        <ol>
+            <li>Attendee 1</li>
+            <li>Attendee 2</li>
+            <li>...</li>
+        </ol>
+        <div class="Agenda">
+            <a name="Agenda"></a>
+            <h2><b>Agenda for today</b></h3>
+            <section>
+                <h3>unfinished item from last time</h3>
+                <p>
+                   Here will be items <i>unfinished</i> from <strong> last time</strong>
+                   <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                   </ul>
+                </p>
+            </section>
+            <section>
+                <h3>new items to discuss today</h3>
+                <p>
+                    here will be some new items to discuss today.<br>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Here is a link to today's meeting.</a>
+                </p>
+            </section>
+            <section>
+                <h3>micellaneous</h3>
+            </section>
+        </div>
+        <div class="Diagrams">
+            <a name="Diagrams"></a>
+            <h2>Here will be some <em>image</em> included here</h2>
+            <img src="screenshots/example.png" alt="screenshot for the w3 website" style="width:512px;height: 200px;">
+        </div>
+        <div class="Videos">
+            <a name="Videos"></a>
+            <h2>Here will be attached with some <span 
+                style="color:red">video</span></h2>
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your Browser does not support the video tag
+            </video>
+        </div>
+        <div class="Audios">
+            <h2>Here will be some audio include</h2>
+            <audio controls>
+                <source src="sample-12s.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <details>
+            <summary>summary for this meeting</summary>
+            <p>
+                Here will be some summary for the meeting
+            </p>
+        </details>
+    </body>
+    <footer>
+        <p>Author: Lemin Jin</p>
+        <p>Something in the text area</p>
+        <textarea rows="4" cols="50">Some text can be entered in the text area</textarea>
+        <p><a href="lejin@ucsd.edu">lejin@ucsd.edu</a></p>
+    </footer>
+
+</html>
