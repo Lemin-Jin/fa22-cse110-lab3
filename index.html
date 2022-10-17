@@ -1,15 +1,16 @@
 <!DOCTYPE html> 
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <title>
             CSE110 Lab2 html page
         </title>
         <link rel="icon" type="image/png" href="icons8-internet-16.png">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-        <h1> 
+        <h1 class="h1_specs"> 
             Pomordoro Timer First Brainstorm
         </h1>
         <h3>
@@ -17,14 +18,14 @@
         </h3>
         </header>
         <hr>
-        <nav>
-            <a href="#Agenda"> Agenda</a> |
-            <a href="#Diagrams"> Diagrams</a> |
-            <a href="#Videos"> Videos</a> |
-        </nav>
+        <div class="flex-container">
+            <div><a href="#Agenda" class="nav_style" > Agenda</a></div>
+            <div><a href="#Diagrams" class="nav_style"> Diagrams</a></div>
+            <div><a href="#Videos" class="nav_style"> Videos</a></div>
+        </div>
         <hr>
-        <form >
-        <fieldset>
+        <form>
+        <fieldset id="center">
             First name: <input type = "text" name = "first_name" />
             <br>
             Last name: <input type = "text" name = "last_name" />
@@ -52,11 +53,11 @@
         </fieldset>
         </form>
         <ol>
-            <li>Attendee 1</li>
-            <li>Attendee 2</li>
-            <li>...</li>
+            <li class="size_set ">Attendee 1</li>
+            <li class="size_set">Attendee 2</li>
+            <li class="size_set">...</li>
         </ol>
-        <div class="Agenda">
+        <div class="box">
             <a name="Agenda"></a>
             <h2><b>Agenda for today</b></h2>
             <section>
@@ -71,20 +72,20 @@
             <section>
                 <h3>new items to discuss today</h3>
                 <p>
-                    here will be some new items to discuss today.<br>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Here is a link to today's meeting.</a>
+                    here will be some new items to discuss today.
+                    <a class="display_block" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Here is a link to today's meeting.</a>
                 </p>
             </section>
             <section>
                 <h3>micellaneous</h3>
             </section>
         </div>
-        <div class="Diagrams">
+        <div class="position">
             <a name="Diagrams"></a>
             <h2>Here will be some <em>image</em> included here</h2>
             <img src="screenshots/example.png" alt="screenshot for the w3 website" style="width:512px;height: 200px;">
         </div>
-        <div class="Videos">
+        <div>
             <a name="Videos"></a>
             <h2>Here will be attached with some <span 
                 style="color:red">video</span></h2>
@@ -92,16 +93,25 @@
                 <source src="video.mp4" type="video/mp4">
                 Your Browser does not support the video tag
             </video>
-        </div>
-        <div class="Audios">
-            <h2>Here will be some audio include</h2>
+        </div>  
+        <div class="box1">
+            <h2>Here will be some <span>audio</span> include</h2>
             <audio controls>
                 <source src="sample-12s.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </div>
+        <h1>Sample Chart with 4 columns(if needed)</h1>
+            <div class="grid-container">
+            <div class="grid-item0">1</div>
+            <div class="grid-item1">2</div>
+            <div class="grid-item2">3</div>
+
+
+
+        </div>
         <details>
-            <summary>summary for this meeting</summary>
+            <summary >summary for this meeting</summary>
             <p>
                 Here will be some summary for the meeting
             </p>
@@ -110,7 +120,7 @@
             <p>Author: Lemin Jin</p>
             <p>Something in the text area</p>
             <textarea rows="4" cols="50">Some text can be entered in the text area</textarea>
-            <p><a href="lejin@ucsd.edu">lejin@ucsd.edu</a></p>
+            <p><a class="display_none" href="lejin@ucsd.edu">lejin@ucsd.edu</a></p>
         </footer>
     </body>
     
